@@ -47,6 +47,8 @@
                 android:layout_below="@+id/text_view_title"
                 tools:text="Description"
                 android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
                 />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

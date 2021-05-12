@@ -1,4 +1,4 @@
-package com.demo.livedataroom.Repository;
+package com.demo.livedataroom.repository;
 
 import android.app.Application;
 import android.os.AsyncTask;

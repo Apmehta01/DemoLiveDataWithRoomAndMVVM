@@ -14,7 +14,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(entities = {Note.class},version = 1)
 public abstract class NoteDataBase extends RoomDatabase {
-
     private static NoteDataBase instance;
 
     public abstract NoteDao noteDao();
@@ -47,9 +46,13 @@ public abstract class NoteDataBase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            noteDao.insertNote(new Note("Title 1","Discription 1",1));
+/*            noteDao.insertNote(new Note("Title 1","Discription 1",1));
             noteDao.insertNote(new Note("Title 2","Discription 2",2));
-            noteDao.insertNote(new Note("Title 3","Discription 3",3));
+            noteDao.insertNote(new Note("Title 3","Discription 3",3));*/
+            for(int i=1;i<100;i++){
+                String t=String.valueOf(i);
+                noteDao.insertNote(new Note("This Is Test Title "+t,"This Is Test Discription"+t,i));
+            }
             return null;
         }
     }

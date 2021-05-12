@@ -2,7 +2,7 @@ package com.demo.livedataroom.viewmodel;
 
 import android.app.Application;
 
-import com.demo.livedataroom.Repository.NoteRepository;
+import com.demo.livedataroom.repository.NoteRepository;
 import com.demo.livedataroom.model.Note;
 
 import java.util.List;
